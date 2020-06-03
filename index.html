@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>demo nguyen van phuong boostrap4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="./css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light  bg-light sticky-top">
+  <div class = "container-fluid">
+    <a class="navbar-brand " href="#">
+      <img src="./img/logo.jpg" alt="logo" style="width:50px;">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark active" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">PAGE</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="myCarousel" class="carousel slide">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li class="item1 active"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="img1" width="1920" height="900">
+      <div class="carousel-caption">
+        <p>we are desgin studio that believe in the ideas </p>
+        <h4>HIGHLY CREATIVE SLUTIONS</h4>
+        <button type="button" class="btn btn-outline-light btn-sm bg-light text-dark">
+          PURCHASE NOW
+        </button>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="img2" width="1920" height="900">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="img3" width="1920" height="1920">
+    </div>
+  </div>
+</div>
+
+<!-- Left and right controls -->
+<div class="container-fluid padding">
+  <div class="container ">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <p  style="color:#484848">ABOUT DIGITAL AGENCY </p>
+      </div>
+      <!-- Horizontal Rule -->
+      <hr>
+      <div class="col-12">
+        <p>We always stay with our clients and répact their business. We deliver 100% and provide instant response to help them succeed in constantly changing and challenging business word.
+          Website help you ensure your site remains available and accessible and Front-end Application</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid padding">
+  <div class="container ">
+
+    <div class="row text-center padding">
+      <div class="col-xs-12 col-sm-6 col-md-4 box">
+        <div class="box1">
+          <img src="./img/paris.jpg" class="mx-auto d-block" >
+          <i class="fab fa-react"></i>
+          <h5>Understand the situation</h5>
+          <p>Website help you ensure your site remains available and accessible and Front-end Application</p>
+
+          <button type="button" class="btn btn-outline-dark text-dark btn-sm">
+            EXPLORE SERVICE ->
+          </button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 box ">
+        <div class="box1">
+          <img src="./img/paris.jpg" class="mx-auto d-block" >
+          <i class="fab fa-angular"></i>
+          <h5>Bring the experience to life</h5>
+          <p>Website help you ensure your site remains available and accessible and Front-end Application</p>
+          <button type="button" class="btn btn-outline-dark text-dark btn-sm">
+            EXPLORE SERVICE ->
+          </button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 box">
+        <div class="box1">
+          <img src="./img/paris.jpg" class="mx-auto d-block" >
+          <i class="fab fa-css3"></i>
+          <h5>Strategise chart the course </h5>
+          <p>Website help you ensure your site remains available and accessible and Front-end Application</p>
+
+          <button type="button" class="btn btn-outline-dark text-dark btn-sm">
+            EXPLORE SERVICE ->
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <hr class="my-4">
+  </div>
+</div>
+
+
+
+<script>
+  $(document).ready(function(){
+    $("#myCarousel").carousel("cycle");
+    // Activate Carousel
+    $("#myCarousel").carousel();
+
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+      $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+      $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+      $("#myCarousel").carousel(2);
+    });
+
+    // Enable Carousel Controls
+    $(".carousel-control-prev").click(function(){
+      $("#myCarousel").carousel("prev");
+    });
+
+
+    $(".carousel-control-next").click(function(){
+      $("#myCarousel").carousel("next");
+    });
+  });
+</script>
+
+
+
+
+
+
+</body>
+</html>
